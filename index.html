@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>🎲 Випадковість, якій можна довіряти:</h1>
+
+      <form id="generator-form">
+        <label>
+          Звідси починаємо:
+          <input type="number" id="min" required />
+        </label>
+
+        <label>
+          Далі не йдемо:
+          <input type="number" id="max" required />
+        </label>
+
+        <button type="submit">Крутимо барабан</button>
+      </form>
+
+      <p id="error" class="error" aria-live="polite"></p>
+
+      <p id="result-label" class="result__label" aria-live="polite"></p>
+      <p id="result" class="result" aria-live="polite"></p>
+
+      <section class="history" aria-label="Історія згенерованих чисел">
+        <div class="history__header">
+          <h2 class="history__title">Архів випадковостей:</h2>
+          <button type="button" id="clear-history" class="history__clear">
+            Забути все
+          </button>
+        </div>
+
+        <ul id="history-list" class="history__list" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
