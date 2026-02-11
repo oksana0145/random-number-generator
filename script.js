@@ -4,7 +4,6 @@ const maxInput = document.querySelector("#max");
 const resultEl = document.querySelector("#result");
 const resultLabelEl = document.querySelector("#result-label");
 const errorEl = document.querySelector("#error");
-
 const historyListEl = document.querySelector("#history-list");
 const clearHistoryBtn = document.querySelector("#clear-history");
 
@@ -35,7 +34,7 @@ const clearUI = () => {
 
 const validate = (min, max) => {
   if (min >= max) {
-    return "Мінімум має бути менше максимуму";
+    return "'Звідси починаємо' має бути менше 'Тут закінчуємо'";
   }
 
   return null;
